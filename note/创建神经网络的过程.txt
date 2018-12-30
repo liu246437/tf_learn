@@ -1,0 +1,48 @@
+搭建神经网络的过程：
+	1、准备
+	2、前传
+	3、反转
+	4、迭代
+
+1、准备
+	import
+	常量定义
+
+	生成数据集
+
+2、前向传播：定义输入，参数和输出
+	x=
+	y_=
+
+	w1=
+	w2=
+
+	a=
+	y=
+
+3、反向传播：定义损失函数，反向传播方法
+	loss=
+
+	train_step=
+
+4、生成会话，训练STEPS轮
+	with tf.Session() as sess:
+		init_op = tf.global_variables_initializer()
+		sess_run(init_op)
+		STEPS = 3000	#训练多少轮
+		for i in range STEPS:
+			start = 
+			end = 
+			sess.run(train_step, feed_dict:)
+
+
+
+
+
+
+
+
+
+
+
+
