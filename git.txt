@@ -1,6 +1,0 @@
-在使用git的过程中遇到了一些麻烦，本地仓库使用关联远端仓库时出现了错误
-	Could not read from remote repository.
-这是因为没有公私钥，所以要现在本地生成密钥，然后粘贴到远端git仓库中
-具体做法如下：
-	1.ssh-keygen -t rsa -C 'liu246437'	//'liu2464337'是用户名，用户名是什么就填写什么。执行此命令命令的过程中会出现三次确认，直接回车就可以。
-	2.cat /root/.ssh/id_rsa.pub显示生成的key，将这个key拷贝到远端git即可，创建key需要在用户setting中创建。
